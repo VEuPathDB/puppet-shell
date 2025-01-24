@@ -21,7 +21,8 @@ if [ -x /usr/bin/id ]; then
 fi
 
 HOSTNAME=`/bin/hostname`
-HISTSIZE=1000
+HISTSIZE=100000
+HISTFILESIZE=100000
 
 if [ -z "$INPUTRC" -a ! -f "$HOME/.inputrc" ]; then
     INPUTRC=/etc/inputrc
