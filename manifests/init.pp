@@ -51,4 +51,11 @@ class shell {
     source => 'puppet:///modules/shell/profile.d/direxpand.sh';
   }
 
+  file { '/etc/profile.d/bash_prompt_color.sh':
+    owner => root,
+    group => root,
+    mode => '0644',
+    source => 'puppet:///modules/shell/profile.d/bash_prompt_color.sh';
+  }
+
 }
