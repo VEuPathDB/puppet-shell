@@ -58,4 +58,11 @@ class shell {
     source => 'puppet:///modules/shell/profile.d/bash_prompt_color.sh';
   }
 
+  file { '/etc/tmux.conf':
+    owner => root,
+    group => root,
+    mode => '0644',
+    source => 'puppet:///modules/shell/tmux.conf';
+  }
+
 }
